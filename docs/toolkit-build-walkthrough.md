@@ -2,6 +2,16 @@
 
 This walkthrough mirrors the steps used to create the CLI AI Toolkit.
 
+## Lab Goal
+
+Build a working CLI toolkit, then verify it by using the commands you created.
+
+## Expected Outputs
+
+- A working CLI with `web-search`, `gemini`, and `image-generate`.
+- A `references/` folder with saved research.
+- An `images/` folder with generated images.
+
 ## Step 1: Define the architecture
 
 - Choose a command registry pattern.
@@ -39,3 +49,9 @@ This walkthrough mirrors the steps used to create the CLI AI Toolkit.
 ## Step 7: Iterate with feedback
 
 - Review outputs, adjust styles, and refine commands.
+
+## Reflection Prompts
+
+- Where did the tool fail on first run?
+- What constraint would have prevented that failure?
+- What output organization rule helped you debug faster?

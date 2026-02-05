@@ -2,6 +2,10 @@
 
 This guide walks students through generating images with OpenAI and managing outputs.
 
+## Why This Works
+
+Prompting is a form of specification. When you add details (subject, setting, style, lighting), the model receives clearer constraints and produces more consistent results. Iteration turns vague goals into precise outputs.
+
 ## 1. Start with a clear prompt
 
 - Subject + setting + style + lighting.
@@ -26,3 +30,9 @@ Images are saved in `images/` with prompt-based filenames. Check the result and 
 ## 5. Capture learnings
 
 Write down what changed between versions and how it affected the result. That feedback loop is the core of prompt iteration.
+
+## Reflection Prompts
+
+- What detail improved the output the most?
+- What detail introduced confusion?
+- What will you reuse in your next prompt?
