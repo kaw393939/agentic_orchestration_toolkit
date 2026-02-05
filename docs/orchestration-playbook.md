@@ -2,6 +2,18 @@
 
 This playbook shows how to structure prompts and workflows so an AI agent can reliably execute multi-step tasks.
 
+## How to Use This Playbook
+
+1. Read "What AI Orchestration Is" and "Why It Works."
+2. Use the Core Principles as a checklist while building.
+3. Apply the checklists during dogfooding and review.
+
+## Suggested Order
+
+1. Playbook
+2. Toolkit quick reference
+3. Build walkthrough
+
 ## What AI Orchestration Is
 
 AI orchestration is the discipline of coordinating AI systems to complete real work. It combines goal setting, constraints, tool usage, and iterative review so outputs are consistent and usable.

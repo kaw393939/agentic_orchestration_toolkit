@@ -6,6 +6,12 @@ This walkthrough mirrors the steps used to create the CLI AI Toolkit.
 
 Build a working CLI toolkit, then verify it by using the commands you created.
 
+## Prerequisites
+
+- Node.js installed (v18+ recommended).
+- An editor (VS Code).
+- OpenAI and Gemini API keys (see Step 2.5).
+
 ## Expected Outputs
 
 - A working CLI with `web-search`, `gemini`, and `image-generate`.
