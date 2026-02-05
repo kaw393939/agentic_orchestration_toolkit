@@ -1,8 +1,22 @@
 # CLI AI Toolkit
 
-A SOLID-friendly Node.js CLI for AI utilities.
+A SOLID-friendly Node.js CLI for AI utilities. It provides repeatable commands
+for research, model feedback, and image generation, with outputs saved in a
+predictable structure.
 
 This repo is also a teaching lab for AI orchestration: breaking work into clear goals, giving the agent tools and constraints, and iterating with feedback.
+
+## What This Toolkit Does
+
+- **Web research:** Run web search and save results in `references/`.
+- **Model feedback:** Send prompts/media to Gemini and save outputs in `references/aI_feedback/`.
+- **Image generation:** Generate images and save them in `images/` with prompt-based names.
+
+## The Automation Mindset
+
+Each time you catch yourself doing a repetitive task (searching, screenshotting, generating images, summarizing), design a tool and a process that automates it. The goal is to remove yourself from the loop by turning manual steps into repeatable commands.
+
+Live site: https://kaw393939.github.io/agentic_orchestration_toolkit/
 
 ## What Is AI Orchestration?
 
