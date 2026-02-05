@@ -19,6 +19,14 @@ You are the CEO of a complex organization (imagine Ford Motor Company). You are 
 - **Organization scales reuse:** Consistent outputs become assets.
 - **Separation of research and execution reduces mistakes:** Facts first, changes second.
 
+## Start Here (Students Build from Scratch)
+
+You will rebuild this toolkit yourself. The finished project is a reference, not a shortcut.
+
+1. Read the playbook and quick reference.
+2. Follow the build walkthrough step-by-step.
+3. Run each command you create and log results.
+
 ## Setup
 
 1. Install dependencies:
@@ -30,7 +38,21 @@ You are the CEO of a complex organization (imagine Ford Motor Company). You are 
    OPENAI_API_KEY=your_key_here
    GEMINI_API_KEY=your_key_here
 
-## Usage
+### What Is a `.env` File?
+
+A `.env` file stores environment variables (secrets and configuration) outside your code. This prevents API keys from being hard-coded into source files.
+
+**Why it matters:**
+- Keeps secrets out of Git.
+- Lets you switch keys per machine or team.
+- Matches common industry practice.
+
+### Get Your API Keys
+
+- OpenAI API key: https://platform.openai.com/api-keys
+- Google Gemini API key (AI Studio): https://aistudio.google.com/app/apikey
+
+## Usage (After You Build It)
 
 - Dev mode:
 
@@ -54,6 +76,32 @@ You are the CEO of a complex organization (imagine Ford Motor Company). You are 
 - Web search output: `references/`
 - Gemini responses: `references/aI_feedback/`
 - Generated images: `images/`
+
+## From-Scratch Checklist (No Skipping)
+
+- Read the playbook and quick reference.
+- Create the CLI structure and command registry.
+- Add `web-search`, then dogfood it.
+- Add `gemini`, then dogfood it with an image.
+- Add `image-generate`, then dogfood it.
+- Document outputs and paths.
+
+## Common Failure Modes
+
+- Missing `OPENAI_API_KEY` or `GEMINI_API_KEY` in `.env`.
+- Running commands before `npm install`.
+- Forgetting to save outputs in `references/` or `images/`.
+- Skipping dogfooding and missing errors until later.
+
+## Capstone Task
+
+Add a new command from scratch and prove it works:
+
+1. Create a new command class.
+2. Register it in `src/index.ts`.
+3. Run it with real input.
+4. Save output to an organized folder.
+5. Write a short reflection on what broke and how you fixed it.
 
 ## AI Orchestration Strategies (with Examples)
 

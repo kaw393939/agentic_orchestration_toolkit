@@ -24,6 +24,18 @@ Build a working CLI toolkit, then verify it by using the commands you created.
 - Add linting and formatting.
 - Create entrypoint and registry.
 
+## Step 2.5: Configure API keys
+
+Create a `.env` file in the project root:
+
+OPENAI_API_KEY=your_key_here
+GEMINI_API_KEY=your_key_here
+
+Get keys from:
+
+- OpenAI: https://platform.openai.com/api-keys
+- Google Gemini: https://aistudio.google.com/app/apikey
+
 ## Step 3: Add web search
 
 - Create a `web-search` command.

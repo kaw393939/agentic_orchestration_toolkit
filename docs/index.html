@@ -24,12 +24,13 @@
           </h1>
           <p class="lead">
             A modular, SOLID-first command line toolkit for research, image
-            generation, and model feedback. Built to expand command-by-command
-            without hiding the structure.
+            generation, and model feedback. Students rebuild it from scratch to
+            learn AI orchestration: managing AI tools with strategy, taste, and
+            context.
           </p>
           <div class="hero-actions">
             <a class="btn" href="#quickstart">Quickstart</a>
-            <a class="btn ghost" href="#commands">Commands</a>
+            <a class="btn ghost" href="#orchestration">Orchestration</a>
           </div>
         </div>
         <div class="hero-right">
@@ -80,9 +81,35 @@
         </div>
       </section>
 
+      <section id="orchestration" class="section reveal">
+        <div class="section-grid brutal-grid">
+          <div>
+            <h2>What is AI orchestration?</h2>
+          </div>
+          <div>
+            <p>
+              AI orchestration is directing an AI system through a workflow of
+              goals, tools, and constraints so outputs are reliable and
+              repeatable. You are managing a workforce of experts, not just
+              asking questions.
+            </p>
+            <p>
+              Think like a CEO: set the strategy, define quality standards, and
+              control the context. Then think like a sommelier and barista:
+              select the right model and make the process consistent.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Strategy</span>
+              <span class="pill">Taste</span>
+              <span class="pill">Context</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="commands" class="section reveal">
         <div class="section-title">
-          <h2>Commands</h2>
+          <h2>What You Will Build</h2>
           <p>Each command stores its output in a predictable location.</p>
         </div>
         <div class="card-grid">
@@ -133,25 +160,69 @@
         </div>
       </section>
 
-      <section id="quickstart" class="section reveal">
+      <section id="keys" class="section reveal">
         <div class="section-title">
-          <h2>Quickstart</h2>
-          <p>Install, configure, and launch in minutes.</p>
+          <h2>API Keys & .env</h2>
+          <p>Store secrets outside code for safety and flexibility.</p>
         </div>
         <div class="card-grid">
           <article class="card brutal-card">
-            <h3>1. Install</h3>
-            <pre><code>npm install</code></pre>
+            <h3>.env Setup</h3>
+            <pre><code>OPENAI_API_KEY=your_key_here
+GEMINI_API_KEY=your_key_here</code></pre>
+            <span class="meta">Place in project root</span>
           </article>
           <article class="card brutal-card">
-            <h3>2. Configure</h3>
-            <pre><code>OPENAI_API_KEY=...
-GEMINI_API_KEY=...</code></pre>
+            <h3>Get OpenAI Key</h3>
+            <pre><code>platform.openai.com/api-keys</code></pre>
+            <span class="meta">OpenAI</span>
+          </article>
+          <article class="card brutal-card">
+            <h3>Get Gemini Key</h3>
+            <pre><code>aistudio.google.com/app/apikey</code></pre>
+            <span class="meta">Google AI Studio</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="quickstart" class="section reveal">
+        <div class="section-title">
+          <h2>Build Path</h2>
+          <p>Recreate the toolkit step-by-step, then run it.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card brutal-card">
+            <h3>1. Study</h3>
+            <pre><code>docs/orchestration-playbook.md</code></pre>
+          </article>
+          <article class="card brutal-card">
+            <h3>2. Build</h3>
+            <pre><code>docs/toolkit-build-walkthrough.md</code></pre>
           </article>
           <article class="card brutal-card">
             <h3>3. Run</h3>
             <pre><code>npm run dev -- web-search "AI tooling"</code></pre>
           </article>
+        </div>
+      </section>
+
+      <section id="success" class="section reveal">
+        <div class="section-grid brutal-grid">
+          <div>
+            <h2>Proof of skill</h2>
+          </div>
+          <div>
+            <p>
+              Your final deliverable is a working CLI with organized outputs
+              and a new command you added yourself. Run it, verify outputs, and
+              document what broke and how you fixed it.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Dogfood</span>
+              <span class="pill">Document</span>
+              <span class="pill">Ship</span>
+            </div>
+          </div>
         </div>
       </section>
     </main>
