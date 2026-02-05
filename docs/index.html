@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Toolkit CLI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero reveal">
+      <div class="hero-grid brutal-grid">
+        <div class="hero-left">
+          <p class="eyebrow">AI Toolkit CLI</p>
+          <div class="badge">RAW / MODULAR / CLI</div>
+          <h1>
+            Brutalist power<br />
+            for AI workflows.
+          </h1>
+          <p class="lead">
+            A modular, SOLID-first command line toolkit for research, image
+            generation, and model feedback. Built to expand command-by-command
+            without hiding the structure.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#quickstart">Quickstart</a>
+            <a class="btn ghost" href="#commands">Commands</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="spec-card brutal-card">
+            <div class="spec-row">
+              <span>Version</span>
+              <span>0.1.0</span>
+            </div>
+            <div class="spec-row">
+              <span>Architecture</span>
+              <span>SOLID + DI</span>
+            </div>
+            <div class="spec-row">
+              <span>Outputs</span>
+              <span>references/ · images/</span>
+            </div>
+            <div class="spec-row">
+              <span>Primary Models</span>
+              <span>GPT-Image-1 · Gemini 3</span>
+            </div>
+          </div>
+          <div class="grid-mark brutal-mark">
+            <span>01</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="overview" class="section reveal">
+        <div class="section-grid brutal-grid">
+          <div>
+            <h2>Purpose-built for extensibility.</h2>
+          </div>
+          <div>
+            <p>
+              The toolkit centers on a clean command registry, typed services,
+              and isolated adapters so every new capability is a predictable
+              add-on. You can register new commands in minutes without touching
+              existing logic.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Command Registry</span>
+              <span class="pill">Services Layer</span>
+              <span class="pill">Structured Output</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="commands" class="section reveal">
+        <div class="section-title">
+          <h2>Commands</h2>
+          <p>Each command stores its output in a predictable location.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card brutal-card">
+            <h3>Web Search</h3>
+            <p>Research online with OpenAI web search tools.</p>
+            <pre><code>npm run dev -- web-search "Gemini 3 API upload"</code></pre>
+            <span class="meta">Output: references/</span>
+          </article>
+          <article class="card brutal-card">
+            <h3>Gemini Response</h3>
+            <p>Send prompts or media to Gemini and archive responses.</p>
+            <pre><code>npm run dev -- gemini "Summarize this image" --file ./img.png</code></pre>
+            <span class="meta">Output: references/aI_feedback/</span>
+          </article>
+          <article class="card brutal-card">
+            <h3>Image Generate</h3>
+            <p>Create images from prompts with prompt-based filenames.</p>
+            <pre><code>npm run dev -- image-generate "Cinematic lighthouse"</code></pre>
+            <span class="meta">Output: images/</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="architecture" class="section reveal">
+        <div class="section-grid brutal-grid">
+          <div>
+            <h2>Raw structural architecture.</h2>
+            <p class="caption">
+              Clean separation of command registration, business logic, and I/O
+              keeps the system deterministic and easy to refactor.
+            </p>
+          </div>
+          <div class="mono-list">
+            <div>
+              <span class="mono">src/commands</span>
+              <p>Self-contained CLI actions.</p>
+            </div>
+            <div>
+              <span class="mono">src/services</span>
+              <p>Model adapters and API clients.</p>
+            </div>
+            <div>
+              <span class="mono">src/core</span>
+              <p>Registry, output helpers, and contracts.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="quickstart" class="section reveal">
+        <div class="section-title">
+          <h2>Quickstart</h2>
+          <p>Install, configure, and launch in minutes.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card brutal-card">
+            <h3>1. Install</h3>
+            <pre><code>npm install</code></pre>
+          </article>
+          <article class="card brutal-card">
+            <h3>2. Configure</h3>
+            <pre><code>OPENAI_API_KEY=...
+GEMINI_API_KEY=...</code></pre>
+          </article>
+          <article class="card brutal-card">
+            <h3>3. Run</h3>
+            <pre><code>npm run dev -- web-search "AI tooling"</code></pre>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer reveal">
+      <div>
+        <p class="eyebrow">CLI AI Toolkit</p>
+        <p>Built for fast research, predictable outputs, and crisp workflows.</p>
+      </div>
+      <div class="footer-meta">
+        <span>macOS · Node.js</span>
+        <span>Brutalist Interface</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
