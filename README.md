@@ -1,3 +1,27 @@
+# Agentic Orchestration Toolkit
+
+<!-- portfolio-curation -->
+## Portfolio Overview
+CLI toolkit for repeatable AI research, model feedback, and generated asset workflows.
+
+**Live site:** https://kaw393939.github.io/agentic-orchestration-toolkit/
+
+## What This Demonstrates
+- Tooling
+- AI operations
+- repeatable workflows
+
+## Stack
+TypeScript, Node.js
+
+## Portfolio Status
+This repository is part of Keith Williams' curated public portfolio. The README has been updated to explain the project purpose, technical focus, and why the work is worth reviewing.
+<!-- /portfolio-curation -->
+
+---
+
+## Original Notes
+
 # CLI AI Toolkit
 
 A SOLID-friendly Node.js CLI for AI utilities. It provides repeatable commands for research, model feedback, and image generation, with outputs saved in a predictable structure.
@@ -100,3 +124,4 @@ AI orchestration is directing an AI system through a workflow of goals, tools, a
 ## Add a New Command
 
 Create a class in `src/commands` that implements the `Command` interface, then register it in `src/index.ts`.
+
